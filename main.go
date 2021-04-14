@@ -29,7 +29,7 @@ var books []Book
 
 // Get all books
 func getBooks(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Content-Type", "application/json") //content is set to json so that it doesn't consider it as plain text
 	json.NewEncoder(w).Encode(books)
 }
 
