@@ -44,7 +44,7 @@ func getBook(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	json.NewEncoder(w).Encode(&Book{})
+	json.NewEncoder(w).Encode(&Book{}) //otherwise return empty book
 }
 
 // Add new book
