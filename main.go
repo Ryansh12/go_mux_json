@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"log"
-	"math/rand"
+	"math/rand" // to generate Id
 	"net/http"
 	"strconv"
 
